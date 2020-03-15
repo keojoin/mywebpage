@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    
+<!-- Section Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-alpha">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/image/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+              Laos AppzStory
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarKey" aria-controls="navbarKey" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarKey">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Section page title -->
+    <header data-jarallax='{"speed": 0.6}' class="jarallax" style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');">
+            <div class="page-image">
+                <h1 class="display-4 font-weight-bold">ຂໍ້ມູນການຕິກຕໍ່</h1>
+                <p class="lead">Lao AppzStory Studio</p>
+            </div>
+    </header>
+
+<!-- Section Blog -->
+   <section class="container py-5">
+       <div class="row text-center">
+           <div class="col-12">
+            <h2 class="border-shot-bottom">ລາຍລະອຽດ</h2>
+           </div>
+           <div class="col-sm-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa fa-address-card fa-4x text-info" aria-hidden="true"></i>
+                        <h4 class="card-title py-2">ທີ່ຢູ່</h4>
+                        <p class="card-text">ບ້ານສ້າງເຫວີຍ ເມືອງ ສີສັດຕະນາກ ນະຄອນຫຼວງວຽງຈັນ</p>
+                    </div>
+                </div>
+           </div>
+           <div class="col-sm-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa fa-phone-square fa-4x text-info" aria-hidden="true"></i>
+                        <h4 class="card-title">ເບີໂທລະສັບ</h4>
+                        <p class="card-text">+85620 95544334</p>
+                    </div>
+                </div>
+           </div>
+           <div class="col-sm-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa fa-envelope fa-4x text-info" aria-hidden="true"></i>
+                        <h4 class="card-title">ອີເມວ</h4>
+                        <p class="card-title">example@gmail.com</p>
+                    </div>
+                </div>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-12">
+               <div class="card">
+                   <div class="card-body">
+                       <h5 class="card-title">ແບບຟອມຕິດຕໍ່ເຮົາ</h5>
+                       <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-4">
+                            <label for="name">ຊື່</label>
+                            <input type="text" id="name" class="form-control" placeholder="ຊື່ຂອງເຈົ້າ">
+                          </div>
+                          <div class="form-group col-md-4">
+                              <label for="phone">ເບີໂທລະສັບ</label>
+                            <input type="text" id="phone" class="form-control" placeholder="ເບີໂທລະສັບ">
+                          </div>
+                          <div class="form-group col-md-4">
+                              <label for="email">ອີເມວ</label>
+                            <input type="text" id="email" class="form-control" placeholder="ອີເມວ">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">ຂໍ້ຄວາມ</label>
+                            <textarea name="" id="message" rows="5" class="form-control" placeholder="ຂຽນຂໍ້ຄວາມຂອງເຈົ້າທີ່ນີ້"></textarea>
+                        </div>
+                        <div class="form-group mb-2 mr-sm-2 text-center">
+                            <div class="g-recaptcha d-inline-block"  data-callback="recaptchaCallback" data-sitekey="6LcpvcgUAAAAAHRPt8wdJeRujHIETZKTkXoWIKou"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary d-block mx-auto">ສົ່ງຂໍ້ຄວາມ</button>
+                      </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+<!-- Section About -->
+    <section class="position-relative py-5 jarallax" data-jarallax='{"speed": 0.6}' style="background-image: url('https://images.unsplash.com/photo-1527792931932-443873b57953?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');">
+        <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="assets/image/logo.jpg" class="img-fluid" width="150px" alt="">
+                <h2 class="display-4 font-weight-bold text-white">LaosAppzStory Studio</h2>
+                <div class="star-rating">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <div class="star-current" style="width: 50%;">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+<!-- Section Footer -->
+    <footer class="semi-footer p-5 text-center text-md-left">
+        <div class="row">
+            <div class="col-md-4">
+            <a href="#">
+                <img src="assets/image/logo.jpg" width="35" height="35" class="d-inline-block align-top" alt="">
+                Lao AppzStory Studio
+            </a>
+            <p>
+                <i class="fa fa-phone-square"></i>: 020 95544334 <br>
+                <i class="fa fa-envelope-square"></i>: email@example.com <br>
+                <i class="fa fa-address-card"></i>: Vientiane Capital Lao PDR
+            </p>
+            <a href="https://web.facebook.com/Saiynamboud" target="_blank">
+              <i class="fa fa-facebook-square fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=eUrtvG8iLB4&t=66s" target="_blank">
+              <i class="fa fa-youtube fa-2x"></i>
+            </a>
+            </div>
+            <div class="col-md-4">
+               <h4>ເມນູ</h4>
+               <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 ">
+               <h4>ແຜນທີ່</h4>
+               <div id="map" ></div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer">
+        <span> CopyRight 2019 <a href="https://web.facebook.com/Saiynamboud" target="_blank">Saiynamboud-IT</a>
+            All Right Reserved
+        </span>
+    </footer>
+
+  <!-- section on to top -->
+    <div class="to-top">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async defersrc="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOgU18_tVZdK-nJ0iDuutPnbUsTYwE_XA&callback=initMap">
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
